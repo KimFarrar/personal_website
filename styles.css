@@ -6,11 +6,11 @@ body{
 }
 
 a{
-	color:gray;
+	color:white;
 }
 
 a:hover{
-	color:white;
+	color:yellow;
 }
 
 ul {
@@ -26,13 +26,13 @@ ul {
 .MainTitle{
 	font-family:"Della Respira" serif;
 	color:yellow;
-	font-size:60;
+	font-size:40;
 }
 
 .note{
 	font-family:"Della Respira" serif;
 	font-size:small;
-	color:gray;
+	color:white;
 }
 
 .signature{
@@ -46,7 +46,7 @@ ul {
 	font-family:"Della Respira" serif;
 	color:yellow;
 	font-style:italic;
-	font-size:50;
+	font-size:40;
 }
 
 h1{
