@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>
+			Gallery | Kim Farrar
+		</title>
+		
+		<link rel="stylesheet"
+			type="text/css"
+			href="bootstrap.css"
+			/>
+			
+		<link rel="stylesheet"
+			type="text/css"
+			href="styles.css"
+			/>
+			
+		<link href='https://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
+			
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" type="image/gif" href="animated_favicon1.gif">
+		
+		<script src="jquery-v1.11.3.js"></script>
+			
+		<script src="behavior.js"></script>
+			
+	</head>
+	<body>
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+			<h1>
+				<div class="MainTitle">
+					Kim Farrar
+				</div>
+			</h1>
+			</div>
+			<div class="col-md-5">
+				<a
+					href="index.html">
+					Home
+				</a>
+				&nbsp;
+				<a
+					href="about.html">
+					About
+				</a>
+				&nbsp;
+				<a
+					href="gallery.html">
+					Gallery
+				</a>
+				&nbsp;
+				<a
+					href="contact.html">
+					Contact
+				</a>
+			</div>
+		</div>
+	</div>
+	<hr></hr>
+		<h1>
+			&nbsp;
+			Travel Gallery
+		</h1>
+		<br>
+		<div class container>
+			<div class="row">
+				<div class="col-md-3">
+				<ul>
+					<li><img id="image1" 
+						class="crop-img" src="images\image1.png" alt="yosemitevalley11-2015"
+						width=30%;/> 
+						<span class="note"> Yosemite Valley 11-2015 </span>
+					</li>
+					<li><img id="image2"
+						class="crop-img" src="images\image2.png" alt="riverwalk"
+						width=30%;/>
+						<span class="note"> San Antonio Riverwalk 12-2015 </span>
+					</li>
+					<li><img id="image3"
+						class="crop-img" src="images\image3.png" alt="campscene"
+						width=30%/>
+						<span class="note"> Green Lake, Dedham, Maine 10-2015 </span>
+					</li>
+				</ul>
+				</div>
+
+				<div class="col-md-1">
+					<button id="backward">&lt;</button>
+				</div>
+				<div class="col-md-7">
+					<img id="bigImage" class="large-img" src="images\image1.png" alt="yosemitevalley11-2015"/> 
+					<span class="note"> Click to toggle slideshow </span>
+				</div>
+				<div class="col-md-1">
+					<button id="forward">&gt;</button>
+				</div>
+			</div>
+			<span class="note"> All photos (c) 2015 Kim Farrar </span>
+		</div>
+		<br>
+	<script>
+		var paused = false;
+
+		$(".crop-img").click(function(){
+			$("#bigImage").attr('src', 
+				$(this).attr('src'));
+		});
+
+		var counter = 1;
+
+		$("#image"+counter).click();
+
+		$("#backward").click(function (){
+			counter = counter - 1;
+			if(counter < 1){
+				counter = 3;
+			}
+			$("#image"+counter).click();
+		});
+
+		$("#forward").click(function (){
+			counter = counter + 1;
+			if(counter > 3){
+				counter = 1;
+			}
+			$("#image"+counter).click();
+		});
+
+		$("#bigImage").click(function (){
+			paused = !paused;
+		});
+
+		setInterval(function (){
+			if(!paused){
+				$("#forward").click();
+			};
+		}, 5000);
+	</script>
+	</body>
+</html>

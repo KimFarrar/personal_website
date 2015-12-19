@@ -49,6 +49,18 @@ ul {
 	font-size:40;
 }
 
+.crop-img{
+  max-height:100%;
+  max-width:100%;
+  margin-bottom: 10px;
+}
+
+.large-img{
+  max-height:600px;
+  max-width:90%;
+  margin-top: 10px;
+}
+
 h1{
 	font-family:"Della Respira" serif;
 }
