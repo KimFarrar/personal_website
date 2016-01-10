@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
 	<head>
 		<title>
@@ -6,71 +8,83 @@
 		
 		<link rel="stylesheet"
 			type="text/css"
-			href="bootstrap.css"
+			href="css/bootstrap.css"
 			/>
 			
 		<link rel="stylesheet"
 			type="text/css"
-			href="styles.css"
+			href="css/styles.css"
 			/>
-			
+		<!-- link to online font set -->	
 		<link href='https://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
-			
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="icon" type="image/gif" href="animated_favicon1.gif">
-				
-		<script src="jquery-v1.11.3.js"></script>
-			
+		
+		<!-- insert favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="icon" type="image/gif" href="images/animated_favicon1.gif">
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<script src="behavior.js"></script>
-			
+		
 	</head>
 	<body>
 	<br>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-7">
-			<h1>
-				<div class="MainTitle">
-					Kim Farrar
-				</div>
-			</h1>
-			</div>
-			<div class="col-md-5">
-				<a
-					href="index.html">
-					Home
-				</a>
-				&nbsp;
-				<a
-					href="about.html">
-					About
-				</a>
-				&nbsp;
-				<a
-					href="gallery.html">
-					Gallery
-				</a>
-				&nbsp;
-				<a
-					href="contact.html">
-					Contact
-				</a>
-			</div>
-		</div>
-	</div>
-		<hr></hr>
+	
+	<!-- start navbar -->
+	
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+  
+		<!-- start collapsed navbar-->
+			<div class="navbar-header">
+				<button 
+					type="button" 
+					class="navbar-toggle collapsed" 
+					data-toggle="collapse" 
+					data-target="#main_navbar" 
+					aria-expanded="false">
+						<div class="menu">
+							Menu
+						</div>
+				</button>
+			</div><!-- / collapsed navbar-->
+
+			<!-- start un-collapsed navbar-->
+			<div 
+				class="collapse navbar-collapse" 
+				id="main_navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li class="active"><a href="contact.html">Contact</a></li>
+				</ul>
+			</div><!-- / un-collapsed navbar-->
+
+		</div> <!-- /container -->
+	</nav> <!-- / navbar -->
+  
 		<h1>
-			&nbsp;
-			Where to find me
+			<div class="MainTitle">
+				&nbsp;
+				Kim Farrar
+			</div>
+		</h1>
+		<hr></hr> <!-- add dividing line -->
+		<h1>
+			<div class="Subtitle">
+				&nbsp;
+				Where to find me
+			</div>
 		</h1>
 		<br>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-2">
+				<div class="col-md-2"> <!-- begin contact icon list -->
 					 <ul>
 						<li><a href="mailto:kim@kimfarrar.com">
 								<img
-									src="email.png"
+									src="images/email.png"
 									width="50px"
 								/>
 							</a>
@@ -78,7 +92,7 @@
 						<br>
 						<li><a href="https://www.twitter.com/kim_farrar" target="_blank">
 								<img
-									src="twitter.png"
+									src="images/twitter.png"
 									width="50px"
 								/>
 							</a>
@@ -86,7 +100,7 @@
 						<br>
 						<li><a href="https://www.linkedin.com/in/kimfarrar" target="_blank">
 								<img
-									src="linkedin.png"
+									src="images/linkedin.png"
 									width="50px"
 								/>
 							</a>
@@ -94,7 +108,7 @@
 						<br>
 						<li><a href="https://www.youtube.com/user/Mirubea/featured" target="_blank">
 								<img
-									src="youtube.png"
+									src="images/youtube.png"
 									width="50px"
 								/>
 							</a>
@@ -102,22 +116,23 @@
 						<br>
 						<li><a href="https://instagram.com/kim_farrar/" target="_blank">
 								<img
-									src="instagram.png"
+									src="images/instagram.png"
 									width="50px"
 								/>
 							</a>
 						</li>
 					</ul>
 					<br>
-				</div>
-				<div class="col-md-10">
+				</div> <!-- / contact icon list -->
+				
+				<div class="col-md-10"> <!-- begin personal image -->
 					<a href="images/kim11-2013.jpg">
 					<img
 						src="images/kim11-2013.jpg"
-						width="30%"
+						width="50%"
 					/>
 					</a>
-				</div>
+				</div> <!-- / personal image -->
 			</div>
 		</div>
 		<br>

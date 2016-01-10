@@ -13,10 +13,33 @@ a:hover{
 	color:yellow;
 }
 
+h1{
+	font-family:"Della Respira" serif;
+}
+
+h2{
+	font-family:"Della Respira" serif;
+}
+
+h3{
+	font-family:"Della Respira" serif;
+	text-align:left;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.arrow{
+	color:black;
+}
+
+.cover-img{
+  max-height:100%;
+  max-width:1000px;
+  margin-top: 10px;
 }
 
 .indent{
@@ -25,8 +48,12 @@ ul {
 
 .MainTitle{
 	font-family:"Della Respira" serif;
-	color:yellow;
+	color:white;
 	font-size:40;
+}
+
+.menu{
+	color:gray;
 }
 
 .note{
@@ -39,38 +66,25 @@ ul {
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-style: italic;
 	font-size:xx-large;
-	color:yellow;
+	color:white;
 }
 
 .Subtitle{
 	font-family:"Della Respira" serif;
-	color:yellow;
+	color:white;
 	font-style:italic;
-	font-size:40;
+	font-size:60;
 }
 
 .crop-img{
   max-height:100%;
-  max-width:100%;
+  max-width:150px;
   margin-bottom: 10px;
 }
 
 .large-img{
   max-height:600px;
-  max-width:90%;
+  max-width:100%;
   margin-top: 10px;
-}
-
-h1{
-	font-family:"Della Respira" serif;
-}
-
-h2{
-	font-family:"Della Respira" serif;
-}
-
-h3{
-	font-family:"Della Respira" serif;
-	text-align:center;
 }
 
