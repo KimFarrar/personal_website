@@ -19,8 +19,23 @@
 		<link href='https://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
 		
 		<!-- insert favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="icon" type="image/gif" href="images/animated_favicon1.gif">
+		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -51,8 +66,8 @@
 				<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#" class="pull-left">
-					<img class="brand-img" src="images/kim11-2013.jpg"
-					alt="kim farrar portrait">
+					<img class="brand-img" src="images/ms-icon-144x144.png"
+					alt="tree of life">
 					
 				</a>
 				
@@ -87,7 +102,7 @@
 		<h1>
 			<div class="Subtitle">
 				&nbsp;
-				2015 Travel Gallery
+				Travel Gallery
 			</div>
 		</h1>
 		<br>
@@ -98,18 +113,28 @@
 				<!-- Begin thumbnail list -->
 				<div class="col-md-4">
 				<ul>
-					<li><img id="image2"
-						class="crop-img" src="images/image2.png" alt="san antonio riverwalk 12-2015"
+					<li><img id="image5"
+						class="crop-img" src="images/image5.png" alt="Giant Pacific Octopus, Monterey Bay Aquarium 5-2016"
+						/>
+						<span class="note"> Giant Pacific Octopus, Monterey Bay Aquarium 5-2016 </span>
+					</li>
+					<li><img id="image4"
+						class="crop-img" src="images/image4.png" alt="Asilomar State Beach 3-2016"
+						/>
+						<span class="note"> Asilomar State Beach 3-2016 </span>
+					</li>
+					<li><img id="image3"
+						class="crop-img" src="images/image3.png" alt="san antonio riverwalk 12-2015"
 						/>
 						<span class="note"> San Antonio Riverwalk 12-2015 </span>
 					</li>
-					<li><img id="image1" 
-						class="crop-img" src="images/image1.png" alt="yosemite valley 11-2015"
+					<li><img id="image2" 
+						class="crop-img" src="images/image2.png" alt="yosemite valley 11-2015"
 						/> 
 						<span class="note"> Yosemite Valley 11-2015 </span>
 					</li>
-					<li><img id="image3"
-						class="crop-img" src="images/image3.png" alt="camp scene 8-2015"
+					<li><img id="image1"
+						class="crop-img" src="images/image1.png" alt="camp scene 8-2015"
 						/>
 						<span class="note"> Green Lake, Dedham, Maine 10-2015 </span>
 					</li>
@@ -121,7 +146,7 @@
 					<button class="arrow" id="backward">&lt;</button>
 				</div>
 				<div class="col-md-5">
-					<img id="bigImage" class="large-img" src="images/image1.png" alt="yosemite valley 11-2015"/>
+					<img id="bigImage" class="large-img" src="images/image1.png" alt="camp scene 8-2015"/>
 					<br>
 					<span class="note"> Click photo to toggle slideshow </span>
 				</div>
@@ -129,7 +154,7 @@
 					<button class="arrow" id="forward">&gt;</button>
 				</div> <!-- / image slideshow and buttons -->
 			</div>
-			<span class="note"> All photos (c) 2015 Kim Farrar </span>
+			<span class="note"> All photos (c) 2015, 2016 Kim Farrar </span>
 		</div>
 		<br>
 	<script> <!-- Begin slideshow script>
@@ -147,14 +172,14 @@
 		$("#backward").click(function (){
 			counter = counter - 1;
 			if(counter < 1){
-				counter = 3;
+				counter = 5;
 			}
 			$("#image"+counter).click();
 		});
 
 		$("#forward").click(function (){
 			counter = counter + 1;
-			if(counter > 3){
+			if(counter > 5){
 				counter = 1;
 			}
 			$("#image"+counter).click();
