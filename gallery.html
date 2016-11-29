@@ -113,6 +113,16 @@
 				<!-- Begin thumbnail list -->
 				<div class="col-md-4">
 				<ul>
+					<li><img id="image7"
+						class="crop-img" src="images/image7.png" alt="Surf's up, Pacific Grove 11-2016"
+						/>
+						<span class="note"> Surf's up, Pacific Grove 11-2016 </span>
+					</li>
+					<li><img id="image6"
+						class="crop-img" src="images/image6.png" alt="Grasses & blossoms, Monterey 11-2016"
+						/>
+						<span class="note"> Grasses & blossoms, Monterey 11-2016 </span>
+					</li>
 					<li><img id="image5"
 						class="crop-img" src="images/image5.png" alt="Giant Pacific Octopus, Monterey Bay Aquarium 5-2016"
 						/>
@@ -172,14 +182,14 @@
 		$("#backward").click(function (){
 			counter = counter - 1;
 			if(counter < 1){
-				counter = 5;
+				counter = 7;
 			}
 			$("#image"+counter).click();
 		});
 
 		$("#forward").click(function (){
 			counter = counter + 1;
-			if(counter > 5){
+			if(counter > 7){
 				counter = 1;
 			}
 			$("#image"+counter).click();
